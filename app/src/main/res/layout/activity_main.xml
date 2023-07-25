@@ -1,0 +1,222 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#BFC4E2"
+    tools:context=".MainActivity">
+
+    <TextView
+        android:id="@+id/title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/tic_tac_toe_game"
+        android:textSize="35sp"
+        android:textStyle="bold"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="40dp"
+        android:textColor="#1E5D02"/>
+
+    <TextView
+        android:id="@+id/player_turn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/turn_o"
+        android:textSize="30sp"
+        android:textStyle="bold"
+        android:layout_marginTop="20dp"
+        android:layout_centerHorizontal="true"
+        android:layout_below="@id/title"
+        android:textColor="#1E5D02"/>
+
+    <LinearLayout
+        android:id="@+id/row1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_centerHorizontal="true"
+        android:layout_below="@id/player_turn"
+        android:layout_marginTop="50dp">
+
+        <TextView
+            android:id="@+id/row1col1"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="wrap_content"
+            android:text=""
+            android:textSize="50sp"
+            android:height="100dp"
+            android:width="100dp"
+            android:tag="0"
+            android:paddingTop="10dp"
+            android:paddingEnd="0dp"
+            android:paddingStart="30dp"
+            android:textColor="@color/black"
+            android:background="@drawable/left_card"/>
+
+        <TextView
+            android:id="@+id/row1col2"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text=""
+            android:textSize="50sp"
+            android:height="100dp"
+            android:width="100dp"
+            android:paddingTop="10dp"
+            android:paddingEnd="0dp"
+            android:paddingStart="30dp"
+            android:tag="1"
+            android:textColor="@color/black"
+            android:background="@drawable/card"/>
+        <TextView
+            android:id="@+id/row1col3"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text=""
+            android:tag="2"
+            android:textSize="50sp"
+            android:height="100dp"
+            android:width="100dp"
+            android:paddingTop="10dp"
+            android:paddingEnd="0dp"
+            android:paddingStart="30dp"
+            android:textColor="@color/black"
+            android:background="@drawable/right_card"/>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/row2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_centerHorizontal="true"
+        android:layout_below="@id/row1">
+
+        <TextView
+            android:id="@+id/row2col1"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text=""
+            android:textSize="50sp"
+            android:height="100dp"
+            android:width="100dp"
+            android:tag="3"
+            android:paddingTop="10dp"
+            android:paddingEnd="0dp"
+            android:paddingStart="30dp"
+            android:textColor="@color/black"
+            android:background="@drawable/card"/>
+
+        <TextView
+            android:id="@+id/row2col2"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text=""
+            android:textSize="50sp"
+            android:height="100dp"
+            android:width="100dp"
+            android:tag="4"
+            android:paddingTop="10dp"
+            android:paddingEnd="0dp"
+            android:paddingStart="30dp"
+            android:textColor="@color/black"
+            android:background="@drawable/card"/>
+        <TextView
+            android:id="@+id/row2col3"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text=""
+            android:textSize="50sp"
+            android:height="100dp"
+            android:width="100dp"
+            android:tag="5"
+            android:paddingTop="10dp"
+            android:paddingEnd="0dp"
+            android:paddingStart="30dp"
+            android:textColor="@color/black"
+            android:background="@drawable/card"/>
+
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/row3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_centerHorizontal="true"
+        android:layout_below="@id/row2">
+
+        <TextView
+            android:id="@+id/row3col1"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text=""
+            android:textSize="50sp"
+            android:height="100dp"
+            android:width="100dp"
+            android:tag="6"
+            android:paddingTop="10dp"
+            android:paddingEnd="0dp"
+            android:paddingStart="30dp"
+            android:textColor="@color/black"
+            android:background="@drawable/bottom_left_card"/>
+
+        <TextView
+            android:id="@+id/row3col2"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text=""
+            android:textSize="50sp"
+            android:height="100dp"
+            android:width="100dp"
+            android:tag="7"
+            android:paddingTop="10dp"
+            android:paddingEnd="0dp"
+            android:paddingStart="30dp"
+            android:textColor="@color/black"
+            android:background="@drawable/card"/>
+        <TextView
+            android:id="@+id/row3col3"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text=""
+            android:textSize="50sp"
+            android:height="100dp"
+            android:width="100dp"
+            android:tag="8"
+            android:paddingTop="10dp"
+            android:paddingEnd="0dp"
+            android:paddingStart="30dp"
+            android:textColor="@color/black"
+            android:background="@drawable/bottom_right_card"/>
+
+
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/reset_button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/row3"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="50dp"
+        android:padding="10dp"
+        android:backgroundTint="#1E5D02"
+        android:gravity="center"
+        android:text="@string/reset_game"
+        android:textColor="#F57F17"
+        android:textSize="20sp"
+        android:textStyle="bold" />
+
+
+    </RelativeLayout>

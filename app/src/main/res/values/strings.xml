@@ -1,0 +1,16 @@
+<resources>
+    <string name="app_name">Tic Tac Toe</string>
+    <string name="turn_x">Turn : X</string>
+    <string name="tic_tac_toe_game">Tic Tac Toe Game</string>
+    <string name="x">X</string>
+    <string name="x2">X</string>
+    <string name="x3">X</string>
+    <string name="x4">X</string>
+    <string name="x5">X</string>
+    <string name="x6">X</string>
+    <string name="x7">X</string>
+    <string name="x8">X</string>
+    <string name="x9">X</string>
+    <string name="reset_game">RESET GAME</string>
+    <string name="turn_o">Turn : O</string>
+</resources>
